@@ -26,4 +26,26 @@ usage
 | Kill a Process | `k`         | Terminate selected process                |
 | Refresh Faster | `d`         | Change refresh interval                   |
 
+2️⃣ Inspect One systemd Service
+
+Check Status of SSH Service
+<img width="1856" height="894" alt="image" src="https://github.com/user-attachments/assets/78492bb1-8093-49a8-9792-ee5ba6e030ae" />
+<br>
+)
+🔹 View Logs for That Service
+
+<img width="1734" height="357" alt="image" src="https://github.com/user-attachments/assets/ba972205-7d04-4d53-bc11-aa726680a01a" />
+✅ Step 1: Check CPU & Load
+top
+uptime
+
+<img width="1803" height="953" alt="image" src="https://github.com/user-attachments/assets/0c27bff0-d4cc-47d3-8e6d-a12da49ee16a" />
+Step 2: Check Memory
+free -h
+<img width="1133" height="173" alt="image" src="https://github.com/user-attachments/assets/754df0b3-6f85-4f9a-89b0-8b321d77d781" />
+Step 3: Check Disk
+df -h
+<img width="1269" height="435" alt="image" src="https://github.com/user-attachments/assets/60780147-2882-477a-9d7d-18047bbf49cd" />
+If disk > 90% full → possible issue.
+
 
