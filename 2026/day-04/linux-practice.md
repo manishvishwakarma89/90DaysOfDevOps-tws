@@ -48,4 +48,25 @@ df -h
 <img width="1269" height="435" alt="image" src="https://github.com/user-attachments/assets/60780147-2882-477a-9d7d-18047bbf49cd" />
 If disk > 90% full → possible issue.
 
+Service Practice Note – SSH Service (sshd)
+1️⃣ Check if Service is Running
+systemctl status ssh
+
+<img width="1911" height="661" alt="image" src="https://github.com/user-attachments/assets/a7d1f1eb-65d3-4259-bbbd-af73a1be0771" />
+<br>
+2️⃣ Check if SSH is Enabled at Boot
+<img width="1392" height="213" alt="image" src="https://github.com/user-attachments/assets/a9c3ee9b-62bc-4216-81a9-9fac9fe3a54f" />
+Step 2️⃣ Enable SSH to start at boot
+<img width="1395" height="153" alt="image" src="https://github.com/user-attachments/assets/6c2fe310-2073-456b-90bb-0f004c1921ea" />
+<br>
+Step 3️⃣ If SSH is not running, start it
+sudo systemctl start ssh
+Then verify:
+systemctl status ssh
+so use
+systemctl enable sshd
+systemctl start sshd
+systemctl status sshd
+<img width="1919" height="838" alt="image" src="https://github.com/user-attachments/assets/0c9079a4-271d-4ca1-95d2-796949ae8146" />
+<hr>
 
