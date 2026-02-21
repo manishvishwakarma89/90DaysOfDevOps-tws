@@ -5,10 +5,15 @@ This plan defines my understanding, motivation, goals, and consistency strategy 
 <hr>
 ### Current Level
 <ul>
-  <li>
     <li>
-      Student (Final Year)
-    </li>
+     Cloud Support Staff, MMTTC, Ramanujan College, University of Delhi
+      
+  </li>
+  <li>
+      Having hands-on 1+ years of AWS services i.e. EC2, S3, EBS, RDS, Cloudformation, CloudWatch, CloudTrail, ECS, CodePipeline, DynamoDB.
+  </li>
+  <li>
+      Troubleshooting in networking tasks and cost optimization
   </li>
 </ul>
 
