@@ -13,7 +13,7 @@ Current Level
       Having hands-on 1+ years of AWS services i.e. EC2, S3, EBS, RDS, Cloudformation, CloudWatch, CloudTrail, ECS, CodePipeline, DynamoDB.
   </li>
   <li>
-      Troubleshooting in networking tasks and cost optimization
+      Troubleshooting in linux, networking and system taks
   </li>
 </ul>
 <hr>
