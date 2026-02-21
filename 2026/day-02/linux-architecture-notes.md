@@ -38,13 +38,13 @@ Why Process States Matter
    | **Manages dependencies**     | Ensures services start in the correct order based on dependency relationships               |
 
 4. Essential Daily Commands
- | **Command**  | **Purpose**                          | **Common Usage Example** |
-| ------------ | ------------------------------------ | ------------------------ |
-| `ps`         | View running processes               | `ps -ef`                 |
-| `top`        | Monitor real-time CPU & memory usage | `top`                    |
-| `systemctl`  | Manage system services               | `systemctl status nginx` |
-| `journalctl` | View system and service logs         | `journalctl -u nginx`    |
-| `kill`       | Terminate processes                  | `kill -9 <PID>`          |
+   | **Command**  | **Purpose**                          | **Common Usage Example** |
+   | ------------ | ------------------------------------ | ------------------------ |
+   | `ps`         | View running processes               | `ps -ef`                 |
+   | `top`        | Monitor real-time CPU & memory usage | `top`                    |
+   | `systemctl`  | Manage system services               | `systemctl status nginx` |
+   | `journalctl` | View system and service logs         | `journalctl -u nginx`    |
+   | `kill`       | Terminate processes                  | `kill -9 <PID>`          |
 
 📌 Conclusion
 Linux is the base operating system for most production systems.
