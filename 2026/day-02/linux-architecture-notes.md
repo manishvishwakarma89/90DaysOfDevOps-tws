@@ -29,12 +29,13 @@ Why Process States Matter
 
 
 3. systemd – Service Management
-| **Component**                | **Description**                                                                             |
-| ---------------------------- | ------------------------------------------------------------------------------------------- |
-| **systemd**                  | Modern init system used in most Linux distributions to manage system processes and services |
-| **Starts services at boot**  | Automatically initializes and starts required services during system startup                |
-| **Restarts failed services** | Can automatically restart services if they crash (based on configuration)                   |
-| **Manages dependencies**     | Ensures services start in the correct order based on dependency relationships               |
+   
+   | **Component**                | **Description**                                                                             |
+   | ---------------------------- | ------------------------------------------------------------------------------------------- |
+   | **systemd**                  | Modern init system used in most Linux distributions to manage system processes and services |
+   | **Starts services at boot**  | Automatically initializes and starts required services during system startup                |
+   | **Restarts failed services** | Can automatically restart services if they crash (based on configuration)                   |
+   | **Manages dependencies**     | Ensures services start in the correct order based on dependency relationships               |
 
 4. Essential Daily Commands
  | **Command**  | **Purpose**                          | **Common Usage Example** |
