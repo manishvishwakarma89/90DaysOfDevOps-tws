@@ -50,4 +50,5 @@ Why Process States Matter
 Linux is the base operating system for most production systems.
 Understanding kernel behavior, process lifecycle, and systemd service management forms the foundation for effective DevOps troubleshooting and incident response.
 
+Note: use ps and top for process monitoring, systemctl for service management, journalctl for log analysis, and kill for process control.
 
