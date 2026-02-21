@@ -27,3 +27,26 @@ Why Process States Matter
 | **Zombie Process**           | `Z` (Zombie)                                | Process finished but parent hasn’t cleaned it   | `ps -el                                                 | grep Z`, check parent PID |
 | **Orphan Process**           | Any state (adopted by PID 1)                | Parent died before child                        | `ps -ef`, verify PPID = 1                               |                           |
 
+
+3. systemd – Service Management
+| **Component**                | **Description**                                                                             |
+| ---------------------------- | ------------------------------------------------------------------------------------------- |
+| **systemd**                  | Modern init system used in most Linux distributions to manage system processes and services |
+| **Starts services at boot**  | Automatically initializes and starts required services during system startup                |
+| **Restarts failed services** | Can automatically restart services if they crash (based on configuration)                   |
+| **Manages dependencies**     | Ensures services start in the correct order based on dependency relationships               |
+
+4. Essential Daily Commands
+ | **Command**  | **Purpose**                          | **Common Usage Example** |
+| ------------ | ------------------------------------ | ------------------------ |
+| `ps`         | View running processes               | `ps -ef`                 |
+| `top`        | Monitor real-time CPU & memory usage | `top`                    |
+| `systemctl`  | Manage system services               | `systemctl status nginx` |
+| `journalctl` | View system and service logs         | `journalctl -u nginx`    |
+| `kill`       | Terminate processes                  | `kill -9 <PID>`          |
+
+📌 Conclusion
+Linux is the base operating system for most production systems.
+Understanding kernel behavior, process lifecycle, and systemd service management forms the foundation for effective DevOps troubleshooting and incident response.
+
+
