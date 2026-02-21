@@ -17,3 +17,13 @@ The kernel has 4 jobs:
 | **S**     | Sleeping (Interruptible Sleep) | Waiting for a resource (disk, network, input)                      | App waiting for DB response                      |
 | **T**     | Stopped                        | Process is paused/stopped manually (e.g., via signal)              | Pressed `Ctrl+Z` in terminal                     |
 | **Z**     | Zombie                         | Process finished execution but parent hasn’t collected exit status | Child process ended, parent didn’t call `wait()` |
+
+Why Process States Matter
+| **Issue**                    | **Related Process State(s)**                | **What It Indicates**                           | **What You Check as DevOps Engineer**                   |                           |
+| ---------------------------- | ------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------- | ------------------------- |
+| **High CPU Usage**           | `R` (Running)                               | Process is actively consuming CPU               | `top`, `htop`, `ps -eo %cpu --sort=-%cpu`               |                           |
+| **Memory Leaks**             | Usually `S` or `R`                          | Process memory keeps increasing without release | `top`, `ps aux --sort=-%mem`, `free -m`, check OOM logs |                           |
+| **Stuck / Unresponsive App** | `S` (Sleeping), `D` (Uninterruptible Sleep) | Waiting for I/O, disk, network, or DB           | `ps -ef`, `strace -p <pid>`, check disk/network latency |                           |
+| **Zombie Process**           | `Z` (Zombie)                                | Process finished but parent hasn’t cleaned it   | `ps -el                                                 | grep Z`, check parent PID |
+| **Orphan Process**           | Any state (adopted by PID 1)                | Parent died before child                        | `ps -ef`, verify PPID = 1                               |                           |
+
