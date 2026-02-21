@@ -17,7 +17,7 @@ Current Level
   </li>
 </ul>
 <hr>
-### My Understanding of DevOps & Cloud
+My Understanding of DevOps & Cloud
 DevOps is a cultural and set of practices that focuses on collaboration between development and operations teams to deliverable a scalable, reliable and optimum sofware as product.
 Mainly DevOps plays major role in sofware industry as follows:
 <ul>
@@ -34,5 +34,33 @@ Mainly DevOps plays major role in sofware industry as follows:
         Infrastructure as Code (IAC)
     </li>
 </ul>
-    
+Goal: The main goal of DevOps engineer is to deliver applications faster, more reliably, with automation and collaboration.
+Keys areas focuses on:
+<ul>
+<li>
+    Linux: Shell Commands, Shell scripting, Networking commmands
+</li>
+<li>
+    Networking: OSI Layer/TCP-IP Layer, Routing, Protocols, Security, firewalls 
+</li>
+<li>
+    Git: git commands: git push, pull, add, commit merge, branch, rebase, cherry pick
+</li>
+<li>
+    CI/CD Pipeline: Continous Integration & Continous Deployment; Jenkins, GitHubActions, AWS CodePipeline, CodeBuild
+</li>
+
+<li>
+    Containers: Docker commands- build, docker-compose
+</li>
+<li>
+    Orchesterisation: Kubernetes Architecture
+</li>
+<li>
+    Monitoring: CloudWatch, Grafana
+</li>
+<li>
+    Infrastructure: Three types of AWS Infrstructure- IAS, PAAS SAS 
+</li>
 </ul>
+
