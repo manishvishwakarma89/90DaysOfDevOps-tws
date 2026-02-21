@@ -52,3 +52,7 @@ Understanding kernel behavior, process lifecycle, and systemd service management
 
 Note: use ps and top for process monitoring, systemctl for service management, journalctl for log analysis, and kill for process control.
 
+#90DaysOfDevOps  #TrainWithShubham
+
+Happy Learning
+Manish Kumar Vishwakarma
