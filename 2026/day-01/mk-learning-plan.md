@@ -3,7 +3,7 @@
 The goal of Day 01 is to set a strong foundation for my DevOps journey by creating a clear and realistic 90-day execution plan.
 This plan defines my understanding, motivation, goals, and consistency strategy for becoming a DevOps Engineer.
 <hr>
-### Current Level
+Current Level
 <ul>
     <li>
      Cloud Support Staff, MMTTC, Ramanujan College, University of Delhi
@@ -16,4 +16,23 @@ This plan defines my understanding, motivation, goals, and consistency strategy 
       Troubleshooting in networking tasks and cost optimization
   </li>
 </ul>
-
+<hr>
+### My Understanding of DevOps & Cloud
+DevOps is a cultural and set of practices that focuses on collaboration between development and operations teams to deliverable a scalable, reliable and optimum sofware as product.
+Mainly DevOps plays major role in sofware industry as follows:
+<ul>
+    <li>
+        Automation
+    </li>
+    <li>
+        CI/CD
+    </li>
+    <li>
+        Monitoring
+    </li>
+    <li>
+        Infrastructure as Code (IAC)
+    </li>
+</ul>
+    
+</ul>
