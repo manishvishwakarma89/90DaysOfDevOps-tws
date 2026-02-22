@@ -9,3 +9,27 @@ Appending new lines
 Reading the file back
 Keep it basic and repeatable.
 <hr>
+Step 1: Create a File
+touch mynotes.txt
+
+<img width="744" height="38" alt="image" src="https://github.com/user-attachments/assets/bfeaa19b-fdb9-43be-92aa-5ed5c5aba08c" />
+Step 2: Write Text to the File (Overwrite Mode)
+echo "This is my testing file." > mynotes.txt
+echo "This is my testing file content." >> mynotes.txt
+echo "This is another content for testing line 3" | tee -a mynotes.txt
+<img width="1179" height="234" alt="image" src="https://github.com/user-attachments/assets/e77af1d8-8c57-4a2a-8bf4-3d7282ec4a55" />
+
+
+<img width="1312" height="184" alt="image" src="https://github.com/user-attachments/assets/0f558209-c8b2-4efb-b15c-06272755b215" />
+Command 3: 
+head -n 2 mynotes.txt
+
+<img width="928" height="127" alt="image" src="https://github.com/user-attachments/assets/ab01b96b-2688-46e3-bf53-96725a1e1bf8" />
+tail -n 2 mynotes.txt
+<img width="864" height="93" alt="image" src="https://github.com/user-attachments/assets/caba6b04-5941-4df5-87fc-ce2af3ed52f9" />
+
+
+
+
+
+
