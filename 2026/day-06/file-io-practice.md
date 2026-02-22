@@ -11,13 +11,18 @@ Keep it basic and repeatable.
 <hr>
 Step 1: Create a File
 touch mynotes.txt
-
+<br>
 <img width="744" height="38" alt="image" src="https://github.com/user-attachments/assets/bfeaa19b-fdb9-43be-92aa-5ed5c5aba08c" />
-Step 2: Write Text to the File (Overwrite Mode)
+<br>
+Step 2: Write Text to the File (Overwrite Mode) 
+<br>
 echo "This is my testing file." > mynotes.txt
 echo "This is my testing file content." >> mynotes.txt
 echo "This is another content for testing line 3" | tee -a mynotes.txt
+<br>
 <img width="1179" height="234" alt="image" src="https://github.com/user-attachments/assets/e77af1d8-8c57-4a2a-8bf4-3d7282ec4a55" />
+<br>
+<hr>
 
 
 <img width="1312" height="184" alt="image" src="https://github.com/user-attachments/assets/0f558209-c8b2-4efb-b15c-06272755b215" />
