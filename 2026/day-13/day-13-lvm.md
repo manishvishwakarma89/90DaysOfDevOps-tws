@@ -45,5 +45,4 @@ Screenshots of command outputs
  mkdir -p /mnt/app-data                          # Create mount point
  mount /dev/devops-vg/app-data /mnt/app-data    # Mount LV
  df -h /mnt/app-data                             # Verify mounted filesystem size and usage
- 
 </ul>
