@@ -59,6 +59,11 @@ Screenshots of command outputs
 | └─nvme0n1p2            | 259:2   | 0  | 19G  | 0  | part | /             |
 | nvme1n1                | 259:3   | 0  | 10G  | 0  | disk |               |
 | └─devops--vg-app--data | 253:0   | 0  | 500M | 0  | lvm  | /mnt/app-data |
+
+<img width="936" height="256" alt="image" src="https://github.com/user-attachments/assets/358abb7b-7af8-4376-9816-88bf43fa6b30" />
+
+
+
 #### 2. pvc (Physical Volumes)
 | PV           | VG        | Fmt  | Attr | PSize  | PFree |
 | ------------ | --------- | ---- | ---- | ------ | ----- |
