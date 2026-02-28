@@ -12,12 +12,13 @@ Screenshots of command outputs
 
 ### Commands Used
 ### Task 1: Check Current Storage
-lsblk      # List all block devices and partitions
-pvs        # Show existing physical volumes
-vgs        # Show existing volume groups
-lvs        # Show existing logical volumes
-df -h      # Show mounted filesystems and their usage
-
+<ul>
+<li> lsblk      # List all block devices and partitions
+ </li>
+<li> pvs        # Show existing physical volumes </li>
+<li>vgs        # Show existing volume groups</li>
+<li> lvs        # Show existing logical volumes </li>
+<li> df -h      # Show mounted filesystems and their usage</li>
 
 ### Task 2: Create Physical Volume
 pvcreate /dev/nvme1n1   # Initialize /dev/nvme1n1 as a physical volume for LVM
