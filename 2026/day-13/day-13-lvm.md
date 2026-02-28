@@ -73,4 +73,10 @@ Screenshots of command outputs
 | -------- | --------- | ---------- | ------- | ---- | ------ | ----- | ----- |
 | app-data | devops-vg | -wi-a----- | 500.00m |      |        |       |       |
 
+#### 5. df -h (Disk Usage)
+| Filesystem                       | Size | Used | Avail | Use% | Mounted on    |
+| -------------------------------- | ---- | ---- | ----- | ---- | ------------- |
+| /dev/nvme0n1p2                   | 19G  | 3.2G | 15G   | 18%  | /             |
+| /dev/nvme0n1p1                   | 1G   | 150M | 850M  | 15%  | /boot         |
+| /dev/mapper/devops--vg-app--data | 496M | 24K  | 462M  | 1%   | /mnt/app-data |
 
