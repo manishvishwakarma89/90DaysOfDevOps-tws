@@ -79,4 +79,14 @@ Screenshots of command outputs
 | /dev/nvme0n1p2                   | 19G  | 3.2G | 15G   | 18%  | /             |
 | /dev/nvme0n1p1                   | 1G   | 150M | 850M  | 15%  | /boot         |
 | /dev/mapper/devops--vg-app--data | 496M | 24K  | 462M  | 1%   | /mnt/app-data |
+#### 6. Format and Mount Logical Volume
+| Filesystem                       | Size | Used | Avail | Use% | Mounted on    |
+| -------------------------------- | ---- | ---- | ----- | ---- | ------------- |
+| /dev/mapper/devops--vg-app--data | 496M | 24K  | 462M  | 1%   | /mnt/app-data |
+
+#### 7. Extend Logical Volume
+| Filesystem                       | Size | Used | Avail | Use% | Mounted on    |
+| -------------------------------- | ---- | ---- | ----- | ---- | ------------- |
+| /dev/mapper/devops--vg-app--data | 696M | 30K  | 640M  | 1%   | /mnt/app-data |
+
 
