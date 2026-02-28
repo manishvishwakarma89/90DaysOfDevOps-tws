@@ -49,3 +49,28 @@ Screenshots of command outputs
 | `mount /dev/devops-vg/app-data /mnt/app-data` | Mounts logical volume           | Storage mounted      |
 | `df -h /mnt/app-data`                         | Verify mount and size           | Shows ~500MB mounted |
 
+
+### Command Used for Check Usuage
+#### 1. lsblk (List of ESB block storage)
+| NAME                   | MAJ:MIN | RM | SIZE | RO | TYPE | MOUNTPOINT    |
+| ---------------------- | ------- | -- | ---- | -- | ---- | ------------- |
+| nvme0n1                | 259:0   | 0  | 20G  | 0  | disk |               |
+| ├─nvme0n1p1            | 259:1   | 0  | 1G   | 0  | part | /boot         |
+| └─nvme0n1p2            | 259:2   | 0  | 19G  | 0  | part | /             |
+| nvme1n1                | 259:3   | 0  | 10G  | 0  | disk |               |
+| └─devops--vg-app--data | 253:0   | 0  | 500M | 0  | lvm  | /mnt/app-data |
+#### 2. pvc (Physical Volumes)
+| PV           | VG        | Fmt  | Attr | PSize  | PFree |
+| ------------ | --------- | ---- | ---- | ------ | ----- |
+| /dev/nvme1n1 | devops-vg | lvm2 | a--  | 10.00g | 9.50g |
+
+#### 3. vgs (Volume Groups)
+| VG        | #PV | #LV | #SN | Attr   | VSize  | VFree |
+| --------- | --- | --- | --- | ------ | ------ | ----- |
+| devops-vg | 1   | 1   | 0   | wz--n- | 10.00g | 9.50g |
+#### 4. lvs (Logical Volumes)
+| LV       | VG        | Attr       | LSize   | Pool | Origin | Data% | Meta% |
+| -------- | --------- | ---------- | ------- | ---- | ------ | ----- | ----- |
+| app-data | devops-vg | -wi-a----- | 500.00m |      |        |       |       |
+
+
