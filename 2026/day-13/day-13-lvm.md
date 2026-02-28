@@ -24,6 +24,10 @@ pvcreate /dev/nvme1n1   # Initialize /dev/nvme1n1 as a physical volume for LVM
 pvs                      # Verify physical volume creation
 
 ### Task 3: Create Volume Group
+<ul>
 vgcreate devops-vg /dev/nvme1n1   # Create a volume group named devops-vg
+
 vgs                                # Verify volume group creation
+  
+</ul>
 
