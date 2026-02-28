@@ -21,14 +21,15 @@ Screenshots of command outputs
 <li> df -h      # Show mounted filesystems and their usage</li>
 
 ### Task 2: Create Physical Volume
-pvcreate /dev/nvme1n1   # Initialize /dev/nvme1n1 as a physical volume for LVM
-pvs                      # Verify physical volume creation
+<ul><li> pvcreate /dev/nvme1n1   # Initialize /dev/nvme1n1 as a physical volume for LVM </li>
+<li> pvs                      # Verify physical volume creation </li>
+</ul>
 
 ### Task 3: Create Volume Group
 <ul>
-vgcreate devops-vg /dev/nvme1n1   # Create a volume group named devops-vg
+<li> vgcreate devops-vg /dev/nvme1n1   # Create a volume group named devops-vg </li> 
 
-vgs                                # Verify volume group creation
-  
+<li> vgs                                # Verify volume group creation
+</li>
 </ul>
 
