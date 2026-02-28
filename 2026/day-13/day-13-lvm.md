@@ -61,7 +61,9 @@ Screenshots of command outputs
 | └─devops--vg-app--data | 253:0   | 0  | 500M | 0  | lvm  | /mnt/app-data |
 
 <img width="936" height="256" alt="image" src="https://github.com/user-attachments/assets/358abb7b-7af8-4376-9816-88bf43fa6b30" />
+<br>
 
+<img width="1168" height="465" alt="image" src="https://github.com/user-attachments/assets/a851cd73-9240-46e6-af7d-7edbafb65bf0" />
 
 
 #### 2. pvc (Physical Volumes)
