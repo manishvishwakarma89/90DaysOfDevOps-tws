@@ -12,37 +12,40 @@ Screenshots of command outputs
 
 ### Commands Used
 ### Task 1: Check Current Storage
-<ul>
-<li> lsblk      # List all block devices and partitions
- </li>
-<li> pvs        # Show existing physical volumes </li>
-<li>vgs        # Show existing volume groups</li>
-<li> lvs        # Show existing logical volumes </li>
-<li> df -h      # Show mounted filesystems and their usage</li>
+| Task                          | Command | Purpose                                       | Expected Result                                     |
+| ----------------------------- | ------- | --------------------------------------------- | --------------------------------------------------- |
+| **Check Block Devices**       | `lsblk` | Lists all disks, partitions, and mount points | Shows devices like `/dev/nvme1n1`, `/dev/sda`, etc. |
+| **Check Physical Volumes**    | `pvs`   | Displays existing LVM physical volumes        | Shows PV name, VG name, size                        |
+| **Check Volume Groups**       | `vgs`   | Displays existing volume groups               | Shows VG name, size, free space                     |
+| **Check Logical Volumes**     | `lvs`   | Displays logical volumes inside VGs           | Shows LV name, VG name, size                        |
+| **Check Mounted Filesystems** | `df -h` | Shows mounted storage usage                   | Displays filesystem size, used space                |
+
 
 
 ### Task 2: Create Physical Volume
-<ul><li> pvcreate /dev/nvme1n1   # Initialize /dev/nvme1n1 as a physical volume for LVM </li>
-<li> pvs                      # Verify physical volume creation </li>
-</ul>
+| Command                 | Purpose                                 | Output                       |
+| ----------------------- | --------------------------------------- | ---------------------------- |
+| `pvcreate /dev/nvme1n1` | Initializes disk as LVM Physical Volume | PV created successfully      |
+| `pvs`                   | Verify PV creation                      | Shows `/dev/nvme1n1` in list |
 
 ### Task 3: Create Volume Group
-<ul>
-<li> vgcreate devops-vg /dev/nvme1n1   # Create a volume group named devops-vg </li> 
+| Command                           | Purpose                       | Output                      |
+| --------------------------------- | ----------------------------- | --------------------------- |
+| `vgcreate devops-vg /dev/nvme1n1` | Creates Volume Group using PV | VG created                  |
+| `vgs`                             | Verify VG                     | Shows `devops-vg` with size |
 
-<li> vgs                                # Verify volume group creation
-</li>
-</ul>
 
 ### Task 4: Create Logical Volume
-<ul>
- lvcreate -L 500M -n app-data devops-vg   # Create a logical volume named app-data with 500MB
- lvs                                       # Verify logical volume creation
-</ul>
+| Command                                  | Purpose                      | Output              |
+| ---------------------------------------- | ---------------------------- | ------------------- |
+| `lvcreate -L 500M -n app-data devops-vg` | Creates 500MB Logical Volume | LV created          |
+| `lvs`                                    | Verify LV                    | Shows `app-data` LV |
+
 ### Task 5: Format and Mount Logical Volume
-<ul>
- mkfs.ext4 /dev/devops-vg/app-data               # Format LV with ext4 filesystem
- mkdir -p /mnt/app-data                          # Create mount point
- mount /dev/devops-vg/app-data /mnt/app-data    # Mount LV
- df -h /mnt/app-data                             # Verify mounted filesystem size and usage
-</ul>
+| Command                                       | Purpose                         | Output               |
+| --------------------------------------------- | ------------------------------- | -------------------- |
+| `mkfs.ext4 /dev/devops-vg/app-data`           | Formats LV with ext4 filesystem | Filesystem created   |
+| `mkdir -p /mnt/app-data`                      | Creates mount directory         | Directory created    |
+| `mount /dev/devops-vg/app-data /mnt/app-data` | Mounts logical volume           | Storage mounted      |
+| `df -h /mnt/app-data`                         | Verify mount and size           | Shows ~500MB mounted |
+
