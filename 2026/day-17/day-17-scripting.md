@@ -99,26 +99,24 @@ Output:
    - [Script]
    <img width="537" height="372" alt="image" src="https://github.com/user-attachments/assets/d00d7029-f8f5-46a1-b1a7-ee36bbd82b44" />
    
-   - [snapshot]
+   - OUTPUT 
 
-  manish@server:~$ ./install_packages.sh
-Error: Please run this script as root.
 
-manish@server:~$ sudo ./install_packages.sh
-Running as root. Starting package check...
+| **Command (Terminal Prompt)**  | **Output in Terminal**                          |
+| ------------------------------ | ----------------------------------------------- |
+| `$ ./install_packages.sh`      | `Error: Please run this script as root.`        |
+| `$ sudo ./install_packages.sh` | `Running as root. Starting package check...`    |
+|                                | `Checking nginx...`                             |
+|                                | `Status - nginx is already installed.`          |
+|                                | `-----------------------------`                 |
+|                                | `Checking curl...`                              |
+|                                | `Status - curl is not installed. Installing...` |
+|                                | `Status - curl installed successfully.`         |
+|                                | `-----------------------------`                 |
+|                                | `Checking wget...`                              |
+|                                | `Status - wget is already installed.`           |
+|                                | `-----------------------------`                 |
 
-Checking nginx...
-Status - nginx is already installed.
------------------------------
-
-Checking curl...
-Status - curl is not installed. Installing...
-Status - curl installed successfully.
------------------------------
-
-Checking wget...
-Status - wget is already installed.
------------------------------
 
      
      ------------------------
