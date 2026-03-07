@@ -62,11 +62,21 @@ Create greet.sh that:
 
 <img width="545" height="357" alt="image" src="https://github.com/user-attachments/assets/d7f59b83-e410-439b-b53c-6ea077f46872" />
 <hr>
+### Task 4: If-Else Conditions
+1. Create check_number.sh that:
+<ul>
+  <li>Takes a number using read
+</li>
+<li>Prints whether it is positive, negative, or zero
+</li>
+  
+</ul>
 
+2. Create file_check.sh that:
 
-
-<hr>
-
+Asks for a filename
+Checks if the file exists using -f
+Prints appropriate message
 
 
 
