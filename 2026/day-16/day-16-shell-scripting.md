@@ -109,6 +109,13 @@ Create server_check.sh that:
 
 <hr>
 
+What I learned -
+How to write and execute Bash shell scripts using the shebang (#!/bin/bash),variables,and user input with read.
+How variable assignment works in Bash,including accessing variables with $ and understanding single vs double quotes.
+How to control script flow using conditional statements (if, elif, else) and test operators (-f, -gt, -lt).
+How to check file existence and numeric conditions inside shell scripts.
+How to suppress command output using redirection (> /dev/null ).
+How to use systemctl is-active to programmatically check whether a service is running instead of relying on verbose status output.
 
 
 
