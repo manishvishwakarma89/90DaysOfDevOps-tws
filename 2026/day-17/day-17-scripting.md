@@ -1,4 +1,4 @@
-# Day 17 – Shell Scripting: Loops, Arguments & Error Handling
+<img width="537" height="372" alt="image" src="https://github.com/user-attachments/assets/d00d7029-f8f5-46a1-b1a7-ee36bbd82b44" /># Day 17 – Shell Scripting: Loops, Arguments & Error Handling
 ## Task 1: For Loop
 1. Create `for_loop.sh` that:
    - Loops through a list of 5 fruits and prints each one
@@ -41,18 +41,23 @@ Output:
    - Prints `Hello, <name>!`
    - If no argument is passed, prints "Usage: ./greet.sh <name>"
    
-   [Script](scripts/greet.sh)
+   - [Script]
    
-   ![greet](images/greet.sh.png)
+   <img width="565" height="212" alt="image" src="https://github.com/user-attachments/assets/33bc57c4-5cc8-4cb9-bfc2-210c29f34e06" />
+   
+   - OUTPUT
+     <img width="811" height="414" alt="Screenshot 2026-03-08 010915" src="https://github.com/user-attachments/assets/551a1a12-45ae-4d6f-9cb2-445d3ef2ac76" />
 
-2. Create `args_demo.sh` that:
+3. Create `args_demo.sh` that:
    - Prints total number of arguments (`$#`)
    - Prints all arguments (`$@`)
    - Prints the script name (`$0`)
    
-   [Script](scripts/args_demo.sh)
-   
-   ![args_demo](images/args_demo.png)
+   - [Script]
+     <img width="454" height="235" alt="image" src="https://github.com/user-attachments/assets/6c6e5c95-679f-4a5d-a616-dcb6b8ea1ec1" />
+
+   - OUTPUT
+     <img width="792" height="204" alt="image" src="https://github.com/user-attachments/assets/066d6b0f-aff5-4ff7-bf21-c281791ea7fe" />
 
 ---
 
@@ -64,9 +69,12 @@ Output:
    - Installs it if missing, skips if already present
    - Prints status for each package
    
-   [Script](scripts/install_packages.sh)
+   - [Script]
+   <img width="537" height="372" alt="image" src="https://github.com/user-attachments/assets/07f37fe0-2482-44e5-af1a-608daa7a0fee" />
    
-   ![packages](images/packages.png)
+   - OUTPUT:
+   
+   <img width="685" height="286" alt="image" src="https://github.com/user-attachments/assets/59d4c0bf-7ece-4a53-9475-9dc79eba4535" />
 
 ---
 
@@ -78,17 +86,30 @@ Output:
    - Creates a file inside
    - Uses `||` operator to print an error if any step fails
    
-   [Script](scripts/safe_script.sh)
-   
-   ![safe](images/safe.png)
+   - [Script]
+   <img width="759" height="290" alt="image" src="https://github.com/user-attachments/assets/db2bc44f-10c5-4a33-b58c-4236215ab114" />
 
+   - OUTPUT
+   
+   <img width="763" height="191" alt="image" src="https://github.com/user-attachments/assets/e38898c4-3a9a-4c46-9fff-1f69976da5bf" />
+  
 
 2. Modify your `install_packages.sh` to check if the script is being run as root — exit with a message if not.
 
-   [Script](scripts/modified_install_packages.sh)
+   - [Script]
    
-   ![snapshot](images/modify_installpkg.png)
-
+   
+   - ![snapshot]
+     Running as root. Starting package check...
+      Checking nginx...
+      Status - nginx is already installed.
+      -----------------------------
+      Checking curl...
+      Status - curl installed successfully.
+      -----------------------------
+      Checking wget...
+      Status - wget is already installed.
+-----------------------------
 ---
 
 
