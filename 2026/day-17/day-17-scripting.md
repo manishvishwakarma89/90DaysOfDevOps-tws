@@ -50,13 +50,11 @@ Task 3: Command-Line Arguments
 </li>
 </ul>
 ## Scripts
-- [Script](./scripts/countdown.sh)
-- [Script](./file_check.sh)
 
+- [Greet](./scripts/greet.sh)
+- [Countdown](./scripts/countdown.sh)
+- [file_check](./scripts/file_check.sh)
 
- 
- Output:
- 
 <img width="811" height="414" alt="image" src="https://github.com/user-attachments/assets/cdb8569d-ca57-4f99-a0ac-20622da7b286" />
 
 
