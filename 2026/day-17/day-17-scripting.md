@@ -58,8 +58,8 @@ Task 3: Command-Line Arguments
 ## Scripts
 
 
-- [countdown.sh](scripts/countdown.sh)
-- [file_check.sh](file_check.sh)
+- [Script](../scripts/countdown.sh)
+- [Script](../file_check.sh)
 
 
 
