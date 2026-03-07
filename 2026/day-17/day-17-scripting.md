@@ -49,7 +49,7 @@ Task 3: Command-Line Arguments
 <li> If no argument is passed, prints "Usage: ./greet.sh "
 </li>
 </ul>
-[Script](scripts/greet.sh)
+- [greet.sh](scripts/greet.sh)
  
  Output:
 
@@ -57,7 +57,7 @@ Task 3: Command-Line Arguments
 
 ## Scripts
 
-- [greet.sh](greet.sh)
+
 - [countdown.sh](countdown.sh)
 - [file_check.sh](file_check.sh)
 
