@@ -49,9 +49,9 @@ Task 3: Command-Line Arguments
 <li> If no argument is passed, prints "Usage: ./greet.sh "
 </li>
 </ul>
-Script:
-https://github.com/manishvishwakarma89/90DaysOfDevOps-tws/blob/master/2026/day-17/%20scripts/greet.sh
-Output:
+[Script](scripts/greet.sh)
+ 
+ Output:
 
 <img width="811" height="414" alt="image" src="https://github.com/user-attachments/assets/cdb8569d-ca57-4f99-a0ac-20622da7b286" />
 
