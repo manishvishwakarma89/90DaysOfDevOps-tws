@@ -28,3 +28,45 @@ The script is executed using the sh shell.
 Behavior may differ from Bash because sh may not support all Bash-specific features.
 
 <img width="1145" height="271" alt="image" src="https://github.com/user-attachments/assets/9e75d8e6-1f49-4892-b78c-c1be99428321" />
+<hr>
+Task 2: Variables
+1. Create variables.sh with:
+<ul>
+<li>A variable for your NAME </li>
+<li>A variable for your ROLE (e.g., "DevOps Engineer")</li>
+<li>Print: Hello, I am <NAME> and I am a <ROLE> </li
+</ul>
+  
+2. Try using single quotes vs double quotes — what's the difference?
+<ul>
+<li> Using double quote " " - Allow variable expansion
+</li>
+<li>Using single quote ' ' - Treat every character exactly as written
+</li>
+</ul>
+<hr>
+
+<img width="523" height="157" alt="image" src="https://github.com/user-attachments/assets/c02b6755-3bf8-48c9-ad1e-20bf3007969a" />
+<hr>
+Task 3: User Input with read
+<ul>
+  
+Create greet.sh that:
+Asks the user for their name using read
+Asks for their favourite tool
+Prints: Hello <name>, your favourite tool is <tool>
+</ul>
+### Scripts:
+
+<img width="545" height="357" alt="image" src="https://github.com/user-attachments/assets/d7f59b83-e410-439b-b53c-6ea077f46872" />
+
+
+
+<hr>
+
+
+
+
+
+
+
