@@ -12,9 +12,12 @@ Output:
 2. Create `count.sh` that:
    - Prints numbers 1 to 10 using a for loop
    
-   [Script](scripts/count.sh)
+   - [Script]
    
-   ![count](images/count.png)
+   <img width="727" height="200" alt="image" src="https://github.com/user-attachments/assets/fed54648-d71f-45f0-b313-94366ea5a4aa" />
+
+   - Output:
+     <img width="745" height="384" alt="Screenshot 2026-03-08 005425" src="https://github.com/user-attachments/assets/8025a0a4-bc39-423f-a57f-a4a0033545fc" />
 
 ---
 
@@ -24,10 +27,12 @@ Output:
    - Counts down to 0 using a while loop
    - Prints "Done!" at the end
 
-   [Script](scripts/countdown.sh)
+  - [Script]
+    <img width="449" height="290" alt="Screenshot 2026-03-08 005908" src="https://github.com/user-attachments/assets/78a5b561-fa62-4036-9df5-0da5eac1d8ed" />
    
-   ![countdown](images/coutdown.png)
-   
+   -[Countdown]
+   <img width="843" height="294" alt="Screenshot 2026-03-08 010045" src="https://github.com/user-attachments/assets/df077efb-0e36-4475-b0b5-51379f9c13a8" />
+
 ---
 
 ## Task 3: Command-Line Arguments
