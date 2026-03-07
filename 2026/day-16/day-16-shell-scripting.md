@@ -52,13 +52,16 @@ Task 3: User Input with read
 <ul>
   
 Create greet.sh that:
-Asks the user for their name using read
-Asks for their favourite tool
-Prints: Hello <name>, your favourite tool is <tool>
+<li>Asks the user for their name using read</li>
+<li>Asks for their favourite tool </li>
+<li>Prints: Hello <name>, your favourite tool is <tool>
+</li>
 </ul>
+
 ### Scripts:
 
 <img width="545" height="357" alt="image" src="https://github.com/user-attachments/assets/d7f59b83-e410-439b-b53c-6ea077f46872" />
+<hr>
 
 
 
