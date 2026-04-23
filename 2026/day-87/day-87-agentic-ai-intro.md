@@ -18,4 +18,24 @@ Key Reasons for Using Agents in DevOps:
 - Proactive Problem Prevention
 - Contect Intelligence
 
+3. The ReAct pattern (Reason + Act):
+
+User: "Why is broken-app crashing?"
+
+Agent THINKS: I should check which containers are running
+Agent ACTS:   calls list_containers()
+Agent OBSERVES: broken-app is in "Restarting" state
+
+Agent THINKS: I should check the logs
+Agent ACTS:   calls get_logs("broken-app")
+Agent OBSERVES: "exit code 1" after "app starting..."
+
+Agent THINKS: The container exits immediately after starting
+Agent ANSWERS: "The container crashes because the entrypoint
+                command exits with code 1 after 2 seconds..."
+    
+
+                  command exits with code 1 after 2 seconds..."
   
+Agent ANSWERS: "The container crashes because the entrypoint
+                command exits with code 1 after 2 seconds..."
