@@ -1,4 +1,4 @@
-### Task 1: What is Docker?
+<img width="948" height="418" alt="Screenshot 2026-04-23 163856" src="https://github.com/user-attachments/assets/61d55b37-ffdb-4e10-ba4e-5b25cffd503f" />### Task 1: What is Docker?
 Docker is an open source containerization platform that allows you to package any application along with dependencies (libraries, environment, configs, runtime) into a container so it runs consistently across environments (dev, test, production).
 Simple words: build app; run anywhere
 A container is a lightweight, standalone unit that includes:
@@ -70,14 +70,21 @@ sudo systemctl enable docker
 Run Docker without sudo:
 sudo usermod -aG docker $USER docker
 Log out and log back in after this
+<img width="471" height="172" alt="Screenshot 2026-04-23 163054" src="https://github.com/user-attachments/assets/02fca1be-d6fc-4a79-b009-01282d6c178e" />
+<img width="744" height="411" alt="Screenshot 2026-04-23 163348" src="https://github.com/user-attachments/assets/1979834b-2cbb-4b20-ad66-28417aeab2e0" />
 
 2. Step 2: Verify Installation
 docker --version
 Expected output:
-Docker version XX.X.X
+<img width="905" height="397" alt="Screenshot 2026-04-23 163506" src="https://github.com/user-attachments/assets/298afbbc-d67f-412b-95ac-2fac8eca80f9" />
+
 docker info
+<img width="948" height="418" alt="Screenshot 2026-04-23 163856" src="https://github.com/user-attachments/assets/3003fec3-36a1-43b2-bf8b-2573470786cd" />
+
 Step 3: Run Hello World Container
 docker run hell-world
+<img width="917" height="375" alt="image" src="https://github.com/user-attachments/assets/54499547-c771-467b-b8d9-2facdb6c1ccf" />
+
 Step 4: Understand the Output
 What actually happens behind the scenes:
 1. Client → Daemon
@@ -92,4 +99,46 @@ What actually happens behind the scenes:
 5. Run the Container
   - The container runs and prints a message
 
+### Task 3: Run Real Containers
+1. Run an Nginx Container
+   docker run -d -p 8080:80 --name my-nginx nginx
+   <img width="1099" height="352" alt="image" src="https://github.com/user-attachments/assets/902cb6ae-b1cb-4008-9796-d7c3ed8ff53c" />
+2. Run an Ubuntu container in interactive mode — explore it like a mini Linux machine
+   <img width="987" height="505" alt="Screenshot 2026-04-23 165347" src="https://github.com/user-attachments/assets/a02f35d2-af54-4941-b5ed-3c80b6795ea7" />
+3. List all running containers
+   <img width="1299" height="210" alt="Screenshot 2026-04-23 165609" src="https://github.com/user-attachments/assets/7767ad3e-7d7b-4858-920d-499c28196642" />
+4. List all containers (including stopped ones)
+   <img width="1253" height="51" alt="Screenshot 2026-04-23 165725" src="https://github.com/user-attachments/assets/705b3e8d-a959-4377-85f1-eb7588e89d46" />
+5. Stop and remove a container 
+<img width="793" height="91" alt="Screenshot 2026-04-23 165924" src="https://github.com/user-attachments/assets/2cfa5e68-5117-4d92-b291-3511bb310bd5" />
+<img width="830" height="134" alt="Screenshot 2026-04-23 170034" src="https://github.com/user-attachments/assets/0fd86b01-be86-444b-a3ed-32257f626f2a" />
+<hr>
+### Task 4: Explore
+1. Run a container in detached mode — what's different?
+What’s different?
+-d = detached mode
+Runs in background (no terminal attached)
+You get container ID instead of shell
+2. Give a container a custom name
+docker run -d --name my-nginx nginx
+3. Map a port from the container to your host
+docker run -d -p 8080:80 --name web nginx
+4. Check logs of a running container
+docker logs web
+<img width="1102" height="404" alt="Screenshot 2026-04-23 170639" src="https://github.com/user-attachments/assets/eb1c198b-f938-43d9-bbf3-6137ec2f59c3" />
 
+5. Run a command inside a running container
+docker exec -it web bash
+<img width="789" height="85" alt="Screenshot 2026-04-23 170720" src="https://github.com/user-attachments/assets/ab7205f5-0e56-411c-af04-2c9d2615b522" />
+<hr>
+Key Concepts (Important)
+-d → background execution
+--name → easy management
+-p → expose container to outside world
+logs → debugging
+exec → access running container
+“In Docker, I can run containers in detached mode using -d, assign custom names using --name, map ports using -p, check logs using docker logs, and execute commands inside a running container using docker exec -it
+<hr>
+#90DaysOfDevOps #DevOpsKaJosh #TrainWithShubham
+
+Happy Learning! TrainWithShubham
