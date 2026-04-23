@@ -1,5 +1,7 @@
-<img width="948" height="418" alt="Screenshot 2026-04-23 163856" src="https://github.com/user-attachments/assets/61d55b37-ffdb-4e10-ba4e-5b25cffd503f" />### Task 1: What is Docker?
+Task 1: What is Docker?
 Docker is an open source containerization platform that allows you to package any application along with dependencies (libraries, environment, configs, runtime) into a container so it runs consistently across environments (dev, test, production).
+<img width="948" height="418" alt="Screenshot 2026-04-23 163856" src="https://github.com/user-attachments/assets/61d55b37-ffdb-4e10-ba4e-5b25cffd503f" />### 
+
 Simple words: build app; run anywhere
 A container is a lightweight, standalone unit that includes:
 - Application code
