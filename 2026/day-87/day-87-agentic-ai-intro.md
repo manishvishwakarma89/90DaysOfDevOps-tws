@@ -30,3 +30,8 @@ Key Reasons for Using Agents in DevOps:
     Tools -- Python functions that wrap CLI commands (the hands)
     Agent framework -- user LangChain's & Langgraph create_react_agent orchestrates the reasoning loop
     MCP (Model Context Protocol) -- a standard for exposing tools to any AI client
+
+### Task 2: Set Up the Environment
+Clone the reference repository:
+
+
