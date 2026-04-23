@@ -20,20 +20,11 @@ Key Reasons for Using Agents in DevOps:
 
 3. The ReAct pattern (Reason + Act):
 
-User: "Why is broken-app crashing?"
+   Key Components of ReAct:
+   - Thought: The agent reasons about the current state, identifies what it needs to know, and plans the next step.
+   - Action (Act): The agent calls an external tool (e.g., web search, database API, calculator).
+   - Observation: The agent receives the output from the tool and evaluates the new information. 
 
-Agent THINKS: I should check which containers are running
-Agent ACTS:   calls list_containers()
-Agent OBSERVES: broken-app is in "Restarting" state
-
-Agent THINKS: I should check the logs
-Agent ACTS:   calls get_logs("broken-app")
-Agent OBSERVES: "exit code 1" after "app starting..."
-
-Agent THINKS: The container exits immediately after starting
-Agent ANSWERS: "The container crashes because the entrypoint
-                command exits with code 1 after 2 seconds..."
-    
 
                   command exits with code 1 after 2 seconds..."
   
