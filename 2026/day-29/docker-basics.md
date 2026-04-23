@@ -26,12 +26,31 @@ Application Uses: COntainer used for micro-services app but VMs used as a legacy
 
 Q. What is the Docker architecture? (daemon, client, images, containers, registry)
  Docker uses a client–server architecture to build, manage, and run containers.
+<img width="1536" height="1024" alt="ChatGPT Image Apr 23, 2026, 04_11_01 PM" src="https://github.com/user-attachments/assets/1bcf4c7a-8905-4969-9083-6739cc8ee620" />
+ 
   Docker Core Components are:
   1. Docker Client
        The tool you interact with (CLI/API)
         Example commands:
-        docker build
-        docker pull
-        docker run
+        - docker build
+        - docker pull
+        - docker run
             Sends requests to the Docker Daemon
+  2. Docker Daemon (dockerd)
+   - The main engine running in the background
+    It is Responsible for building images, running containers, managing volumes & netowks
+  3. Docker Images:
+     Its blueprint tempalte of container
+     contains application-code, runtime, install dependencies & libraries
+  4. Docker Containers
+  Docker container has follwing lifecycle
+  - start
+  - stop
+  - Delete
+  Docker container is running instance of images, and its lightweight and isolated.
+ 5. Docker Registry
+    It contains running container both on public and private network
+    - storing images for locally or docker hub as public repo
 
+
+    
