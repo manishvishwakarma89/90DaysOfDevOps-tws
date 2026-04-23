@@ -23,10 +23,10 @@ Key Reasons for Using Agents in DevOps:
    Key Components of ReAct:
    - Thought: The agent reasons about the current state, identifies what it needs to know, and plans the next step.
    - Action (Act): The agent calls an external tool (e.g., web search, database API, calculator).
-   - Observation: The agent receives the output from the tool and evaluates the new information. 
+   - Observation: The agent receives the output from the tool and evaluates the new information.
+ 4. Key components:
 
-
-                  command exits with code 1 after 2 seconds..."
-  
-Agent ANSWERS: "The container crashes because the entrypoint
-                command exits with code 1 after 2 seconds..."
+    LLM -- the brain (Ollama/Gemma 4 locally, or Claude/GPT for production)
+    Tools -- Python functions that wrap CLI commands (the hands)
+    Agent framework -- user LangChain's & Langgraph create_react_agent orchestrates the reasoning loop
+    MCP (Model Context Protocol) -- a standard for exposing tools to any AI client
