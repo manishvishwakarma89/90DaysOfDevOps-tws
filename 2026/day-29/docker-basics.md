@@ -1,4 +1,4 @@
-Task 1: What is Docker?
+### Task 1: What is Docker?
 Docker is an open source containerization platform that allows you to package any application along with dependencies (libraries, environment, configs, runtime) into a container so it runs consistently across environments (dev, test, production).
 Simple words: build app; run anywhere
 A container is a lightweight, standalone unit that includes:
@@ -51,6 +51,45 @@ Q. What is the Docker architecture? (daemon, client, images, containers, registr
  5. Docker Registry
     It contains running container both on public and private network
     - storing images for locally or docker hub as public repo
+    1. Developer runs a command (docker run nginx)
+    2. Docker Client sends request to Docker Daemon
+    3. Daemon checks local system for image
+    4. If not found → pulls image from Registry
+    5. Daemon creates and starts Container
+    6. Application runs inside container
+<hr>
+### Task 2: Install Docker
+1. Install Docker on your machine (or use a cloud instance)
+I install Ubuntu server
+command for installing docker:
+sudo apt update -y
+sudo apt install -y docker.io
+- Start and enable Docker:
+sudo systemctl start docker
+sudo systemctl enable docker
+Run Docker without sudo:
+sudo usermod -aG docker $USER docker
+Log out and log back in after this
+
+2. Step 2: Verify Installation
+docker --version
+Expected output:
+Docker version XX.X.X
+docker info
+Step 3: Run Hello World Container
+docker run hell-world
+Step 4: Understand the Output
+What actually happens behind the scenes:
+1. Client → Daemon
+  - Your command goes from Docker Client → Docker Daemon
+2. Check for Image Locally
+  Docker looks for hello-world image on your system
+    Not found (first time)
+3. Pull from Registry
+    - Docker pulls the image from Docker Hub
+4. Create Container
+  Docker creates a container from the image
+5. Run the Container
+  - The container runs and prints a message
 
 
-    
