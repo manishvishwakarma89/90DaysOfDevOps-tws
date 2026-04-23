@@ -28,10 +28,10 @@ Q. What is the Docker architecture? (daemon, client, images, containers, registr
  Docker uses a client–server architecture to build, manage, and run containers.
   Docker Core Components are:
   1. Docker Client
-     The tool you interact with (CLI/API)
-      Example commands:
-      docker build
-      docker pull
-      docker run
-  Sends requests to the Docker Daemon
+       The tool you interact with (CLI/API)
+        Example commands:
+        docker build
+        docker pull
+        docker run
+            Sends requests to the Docker Daemon
 
