@@ -30,17 +30,17 @@
 
 2. Run the same database container, but this time **attach the volume** to it
 
-    ![image](images/task2.2.png)
+    ![image](images/task2.2.jpg)
 
 3. Add some data, stop and remove the container
 
-    ![image](images/task2.3.png)
+    ![image](images/task2.3.jpg)
 
-    ![image](images/task2.3.2.png)
+    ![image](images/task2.3.2.jpg)
 
 4. Run a brand new container with the **same volume**
 
-    ![image](images/task2.4.png)
+    ![image](images/task2.4.jpg)
 5. Is the data still there?
     - Yes,all previous data ,tables and rows are still there.
 
