@@ -39,7 +39,24 @@ Runs Python app when container starts.
 
 <img width="1106" height="614" alt="t2 2" src="https://github.com/user-attachments/assets/1754c0e4-66f8-450f-aa14-eb7cf74b5c3d" />
 
-
-
-
 ---  
+### Task 3: CMD vs ENTRYPOINT
+1. Create an image with `CMD ["echo", "hello"]` — run it, then run it with a custom command. What happens?
+
+    ![image](images/task3.1.png)
+
+* **Run without arguments:**
+  The container runs the default command `echo hello` and outputs:
+
+  ```
+  hello
+  ```
+
+* **Run with a custom command:**
+  When you run the container with a custom command (e.g., `echo "custom command"`), the custom command **completely overrides** the `CMD`, so the output is:
+
+  ```
+  custom command
+  ```
+
+
