@@ -128,7 +128,8 @@ COPY . .
 CMD ["python","app.py"]
 ```
 
-![image](images/final.png)
+<img width="649" height="394" alt="final" src="https://github.com/user-attachments/assets/53ebc228-b5f2-4ba8-b9df-9ca5b731dfda" />
+
 
 Observation:
 Docker reused cached layers for: Base image,Working directory,Dependency installation
