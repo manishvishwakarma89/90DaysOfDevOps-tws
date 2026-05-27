@@ -30,23 +30,24 @@
 
 2. Run the same database container, but this time **attach the volume** to it
 
-    ![image](images/task2.2.jpg)
+   <img width="1280" height="800" alt="task2 2" src="https://github.com/user-attachments/assets/18a44c88-444d-4300-903c-531ab8769c2b" />
+
 
 3. Add some data, stop and remove the container
 
-    ![image](images/task2.3.jpg)
+<img width="2532" height="1177" alt="task2 3" src="https://github.com/user-attachments/assets/f46d5a04-a795-4138-92bc-c6455bbf20c5" />
 
-    ![image](images/task2.3.2.jpg)
 
 4. Run a brand new container with the **same volume**
 
     ![image](images/task2.4.jpg)
+
 5. Is the data still there?
     - Yes,all previous data ,tables and rows are still there.
 
     Verify: `docker volume ls`, `docker volume inspect`
 
-    ![image](images/task2verify.png)
+    
 
 ---
 
