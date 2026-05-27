@@ -117,7 +117,7 @@
 
 - `yes they can ping each other by name`
 
-    ![image](images/task523.png)
+    ![image](images/task6234.png)
 
 
 4. Why does custom networking allow name-based communication but the default bridge doesn't?
