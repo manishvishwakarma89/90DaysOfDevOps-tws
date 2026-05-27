@@ -85,7 +85,65 @@ Runs Python app when container starts.
 3. Build the image — verify that ignored files are not included
 
    <img width="1090" height="448" alt="t5" src="https://github.com/user-attachments/assets/be7cd67d-e9d7-4fc3-afea-a2439531616f" />
-   
+
+---
+
+### Task 6: Build Optimization
+1. Build an image, then change one line and rebuild — notice how Docker uses **cache**
+
+```bash
+FROM python:3.11-slim
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements.txt
+CMD ["python","app.py"]
+```
+Observation: The image is built successfully and all layers are created.
+
+Change one line and rebuild: change in app.py
+
+```bash
+FROM python:3.11-slim
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements.txt
+CMD ["python","app.py"]
+```
+
+Observation:
+Even though only the application code changed
+Docker re-ran pip install -r requirements.txt
+Any change in source code invalidated the cache for all following layers.
+
+
+
+2. Reorder your Dockerfile so that frequently changing lines come **last**
+
+```bash
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python","app.py"]
+```
+
+![image](images/final.png)
+
+Observation:
+Docker reused cached layers for: Base image,Working directory,Dependency installation
+
+3. Why does layer order matter for build speed?
+
+- Docker builds images in layers and caches each layer.
+- If a layer changes,Docker rebuilds that layer and all layers after it.
+- By placing:
+    - Rarely changing files (dependencies) first
+    - Frequently changing files (source code) last
+- Docker can reuse cached layers,resulting in faster rebuilds.
+
+---
+
 
 
 There should be no test.md, .env, .git, or node_modules listed
