@@ -26,7 +26,7 @@
 ### Task 2: Named Volumes
 1. Create a named volume
 
-    ![image](images/task2.1.png)
+    ![image](images/task2.1.jpg)
 
 2. Run the same database container, but this time **attach the volume** to it
 
