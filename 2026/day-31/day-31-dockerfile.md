@@ -15,4 +15,29 @@
 **Verify:** The message prints on `docker run`
 
 ---
-   
+
+### Task 2: Dockerfile Instructions
+
+- `FROM` `python:3.12-alpine`
+Uses lightweight Python image based on Alpine Linux.
+
+- `WORKDIR` `/app`
+Sets /app as working directory inside container.
+
+- `COPY . .`
+Copies everything from your my-first-image folder into /app inside container.
+
+- `RUN` `pip install -r requirements.txt`
+Installs all Python dependencies.
+
+- `EXPOSE 5000`
+Documents that container uses port 5000.
+
+- `CMD ["python","app.py"]`
+Runs Python app when container starts.
+
+![image](images/task2.2.png)
+
+
+
+---  
