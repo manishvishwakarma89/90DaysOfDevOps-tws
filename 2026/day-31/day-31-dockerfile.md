@@ -32,11 +32,13 @@ Installs all Python dependencies.
 
 - `EXPOSE 5000`
 Documents that container uses port 5000.
+<img width="1143" height="451" alt="t3" src="https://github.com/user-attachments/assets/fa0b85a3-6519-4377-bf9f-33fb6ade31c9" />
 
 - `CMD ["python","app.py"]`
 Runs Python app when container starts.
 
-![image](images/task2.2.png)
+<img width="1106" height="614" alt="t2 2" src="https://github.com/user-attachments/assets/1754c0e4-66f8-450f-aa14-eb7cf74b5c3d" />
+
 
 
 
