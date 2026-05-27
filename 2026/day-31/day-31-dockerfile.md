@@ -58,5 +58,36 @@ Runs Python app when container starts.
   ```
   custom command
   ```
+3. When would you use CMD vs ENTRYPOINT?
+
+- Use `CMD` when you want to provide a default command that can be changed easily when you run the container.
+
+- Use `ENTRYPOINT` when you want to set a fixed command that always runs.
+
+---
+### Task 4: Build a Simple Web App Image
+1. Create a small static HTML file (`index.html`) with any content
+2. Write a Dockerfile that:
+   - Uses `nginx:alpine` as base
+   - Copies your `index.html` to the Nginx web directory
+3. Build and tag it `my-website:v1`
+4. Run it with port mapping and access it in your browser
+
+    <img width="939" height="328" alt="t4 1" src="https://github.com/user-attachments/assets/8d39b048-9a08-4b3d-b041-03fd395df220" />
+   <img width="1318" height="565" alt="t4 3" src="https://github.com/user-attachments/assets/50effead-c5b3-46fa-a709-3b3264dff99c" />
+
+
+---
+
+### Task 5: .dockerignore
+1. Create a `.dockerignore` file in one of your project folders
+2. Add entries for: `node_modules`, `.git`, `*.md`, `.env`
+3. Build the image — verify that ignored files are not included
+
+    ![image](images/task5.png)
+
+
+There should be no test.md, .env, .git, or node_modules listed
+---
 
 
