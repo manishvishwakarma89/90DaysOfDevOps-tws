@@ -47,7 +47,7 @@
 
     Verify: `docker volume ls`, `docker volume inspect`
 
-    
+    ![image](images/final.jpg)
 
 ---
 
