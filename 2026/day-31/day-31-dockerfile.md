@@ -43,7 +43,7 @@ Runs Python app when container starts.
 ### Task 3: CMD vs ENTRYPOINT
 1. Create an image with `CMD ["echo", "hello"]` — run it, then run it with a custom command. What happens?
 
-    ![image](images/task3.1.png)
+    ![image](images/t3.1.png)
 
 * **Run without arguments:**
   The container runs the default command `echo hello` and outputs:
