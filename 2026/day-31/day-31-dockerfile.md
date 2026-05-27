@@ -84,7 +84,8 @@ Runs Python app when container starts.
 2. Add entries for: `node_modules`, `.git`, `*.md`, `.env`
 3. Build the image — verify that ignored files are not included
 
-    ![image](images/task5.png)
+   <img width="1090" height="448" alt="t5" src="https://github.com/user-attachments/assets/be7cd67d-e9d7-4fc3-afea-a2439531616f" />
+   
 
 
 There should be no test.md, .env, .git, or node_modules listed
