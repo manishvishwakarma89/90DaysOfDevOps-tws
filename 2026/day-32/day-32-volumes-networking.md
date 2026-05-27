@@ -9,15 +9,15 @@
 
 2. Create some data inside it (a table, a few rows — anything)
 
-    ![image](images/task 1.2.png)
+    ![image](images/task1.2.png)
 
 3. Stop and remove the container
 
-    ![image](images/task 1.3.png)
+    ![image](images/task1.3.png)
 
 4. Run a new one — is your data still there?
 
-    ![image](images/task 1.4.png)
+    ![image](images/task1.4.png)
 
     - No, Data is lost when a container is removed because containers are ephemeral and do not persist data by default.
 
