@@ -110,7 +110,7 @@
 ### Task 5: Custom Networks
 1. Create a custom bridge network called `my-app-net`
 
-    ![image](images/task5.1.png)
+    ![image](images/task523.png)
 
 2. Run two containers on `my-app-net`
 3. Can they ping each other by **name** now?
@@ -127,7 +127,16 @@
 
 ---
 
+### Task 6: Put It Together
+1. Create a custom network
 
+    ![image](images/task6.1.png)
+
+2. Run a **database container** (MySQL/Postgres) on that network with a volume for data
+3. Run an **app container** (use any image) on the same network
+4. Verify the app container can reach the database by container name
+
+    ![image](images/task6234.png)
 
 
 ---
