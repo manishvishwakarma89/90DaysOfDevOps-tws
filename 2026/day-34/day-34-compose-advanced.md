@@ -24,9 +24,9 @@ Create a `docker-compose.yml` for a 3-service stack:
 
     - Yes
 
-    ![image](images/task2down.png)
+    ![image](images/task2down.jpg)
 
-    ![image](images/task2log.png)
+    ![image](images/task2log.jpg)
 
 - Postgres container starts first.
 - Healthcheck waits until DB is ready.
@@ -98,10 +98,10 @@ Create a `docker-compose.yml` for a 3-service stack:
 3. Why doesn't simple scaling work with port mapping?
 
 
-    ![image](images/task5.1.jpeg)
+    ![image](images/task5.1.jpg)
 
 
-    ![image](images/task5.2.jpeg)
+    ![image](images/task5.2.jpg)
 
     - First container started
 
