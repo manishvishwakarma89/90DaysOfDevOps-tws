@@ -24,9 +24,9 @@ Create a `docker-compose.yml` for a 3-service stack:
 
     - Yes
 
-    ![image](images/task2down.jpeg)
+    ![image](images/task2down.png)
 
-    ![image](images/task2log.jpeg)
+    ![image](images/task2log.png)
 
 - Postgres container starts first.
 - Healthcheck waits until DB is ready.
@@ -39,14 +39,14 @@ Create a `docker-compose.yml` for a 3-service stack:
 2. Manually kill the database container — does it come back?
     - yes its back
 
-    ![image](images/task3.1.jpeg)
+    ![image](images/task3.1.jpg)
 
 
 
 3. Try `restart: on-failure` — how is it different?
     - no restart
 
-    ![image](images/task3.3.jpeg)
+    ![image](images/task3.3.jpg)
 
 
 4. When would you use each restart policy?
@@ -70,11 +70,11 @@ Create a `docker-compose.yml` for a 3-service stack:
   [Dockerfile](web_db_cache/app/Dockerfile)
 
 
-  ![image](images/before.jpeg)
+  ![image](images/before.jpg)
 
 
 
- ![image](images/aftercodechange.jpeg)
+ ![image](images/aftercodechange.jpg)
 
 
 
