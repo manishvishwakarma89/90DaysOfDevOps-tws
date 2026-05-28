@@ -109,7 +109,7 @@ Practice and document these:
 
     ![image](images/task5.png)
 
-    [Compose file](worpress-mysql-env/docker-compose.yml)
+    [Compose file](worpress-mysql/docker-compose.yml)
 
     [Env](worpress-mysql-env/.env)
         
