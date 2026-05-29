@@ -28,7 +28,7 @@
    - first image size is 638 MB
    - multi-stage image size is 255 MB
 
-   ![images](images/task2.png)
+   ![images](images/task2.1.png)
 
 
    [Dockerfile](hello-java/Dockerfile.multistage)
