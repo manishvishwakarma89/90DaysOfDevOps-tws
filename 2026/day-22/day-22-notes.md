@@ -7,7 +7,7 @@
 2. Set up your Git identity — name and email
 3. Verify your configuration
 
-![git](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-22/git_config.png)
+![git](git_config.png)
 
 ### Task 2: Create Your Git Project
 1. Create a new folder called `devops-git-practice`
