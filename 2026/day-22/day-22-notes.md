@@ -15,7 +15,7 @@
 3. Check the status — read and understand what Git is telling you
 4. Explore the hidden `.git/` directory — look at what's inside
 
-![git](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-22/git21.png)
+![git](https://github.com/manishvishwakarma89/90DaysOfDevOps-tws/blob/master/2026/day-22/images/git21.png)
 
 ---
 
