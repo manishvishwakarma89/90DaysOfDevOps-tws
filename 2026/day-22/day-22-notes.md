@@ -7,7 +7,7 @@
 2. Set up your Git identity — name and email
 3. Verify your configuration
 
-![git](git_config.png)
+![git](2026/day-22/images/git21.png)
 
 ### Task 2: Create Your Git Project
 1. Create a new folder called `devops-git-practice`
