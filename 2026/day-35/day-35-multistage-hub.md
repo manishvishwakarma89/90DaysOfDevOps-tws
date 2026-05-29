@@ -87,4 +87,4 @@ Apply these to one of your images and rebuild:
 
 ---
 
-Dockehub link : https://hub.docker.com/repository/docker/sanketdangat11/java-multi-stage/
+Dockehub link :[ https://hub.docker.com/repository/docker/sanketdangat11/java-multi-stage/](https://hub.docker.com/repository/docker/manishvishwa801/java-multistage/tags)
