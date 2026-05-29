@@ -114,8 +114,7 @@
 4. Repeat this process at least **3 times** so you have multiple commits in your history
 5. View the full history in a compact format
 
-![git](https://github.com/srdangat/90DaysOfDevOps/blob/master/2026/day-22/git22.png)
-
+![git](https://github.com/manishvishwakarma89/90DaysOfDevOps-tws/blob/master/2026/day-22/images/git22.png)
 ---
 
 ### Task 6: Understand the Git Workflow
