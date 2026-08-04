@@ -230,7 +230,7 @@ Verify the image is back to the previous version:
 kubectl describe deployment nginx-deployment -n dev | grep Image
 ```
 
-![image](images/rollback.png)
+![image](images/rollback_undo.png)
 
 **Verify:** What image version is running after the rollback?
 - After rollback Image Version is `nginx:1.24`
