@@ -2,7 +2,7 @@
 
 ### Task 1: Create Your First Pod (Nginx)
 Create a file called nginx-pod.yaml:
-📄 View Screenshot: [Nginx file](nginx-pod.yml)
+(nginx-pod.yml)
 
 kubectl apply -f nginx-pod.yaml
 ##### Verify:
@@ -23,11 +23,11 @@ kubectl exec -it nginx-pod -- /bin/bash
 #### Inside the container, run:
 curl localhost:80
 exit
-📄 View Screenshot: [Nginx file](nginx-status.pdf)
+(nginx-status.pdf)
 
 ### Task 2: Create a Custom Pod (BusyBox)
 Write a new manifest busybox-pod.yaml from scratch (do not copy-paste the nginx one):
- [Nginx file](busyboxpod.yml)
+ (busyboxpod.yml)
  
 kubectl apply -f busybox-pod.yaml
 kubectl get pods
