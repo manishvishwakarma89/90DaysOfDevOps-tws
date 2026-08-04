@@ -71,7 +71,7 @@ List pods across all namespaces:
 kubectl get pods -A
 ```
 
-![image](images/pod-allns.png)
+![image](images/allpods.png)
 
 Notice that `kubectl get pods` without `-n` only shows the `default` namespace. You must specify `-n <namespace>` or use `-A` to see everything.
 
