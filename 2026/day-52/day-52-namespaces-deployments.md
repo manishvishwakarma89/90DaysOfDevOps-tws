@@ -251,7 +251,7 @@ kubectl get namespaces
 kubectl get pods -A
 ```
 
-![image](images/cleanup.png)
+![image](images/cleanup_deplo.png)
 
 **Verify:** Are all your resources gone?
 - Yes, all resources gone
