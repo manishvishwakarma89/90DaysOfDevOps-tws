@@ -39,7 +39,7 @@ Note the individual Pod IPs. These will change if pods restart — that is the p
 **Verify:** Are all 3 pods running? Note down their IP addresses.
 
 
-![image](images/task1.png)
+![image](images/day53-task1.png)
 
 ---
 
@@ -72,7 +72,7 @@ kubectl apply -f clusterip-service.yaml
 kubectl get services
 ```
 
-![image](images/task2.1.png)
+![image](images/day-53-task2.1.png)
 
 You should see `web-app-clusterip` with a CLUSTER-IP address. This IP is stable — it will not change even if Pods restart.
 
